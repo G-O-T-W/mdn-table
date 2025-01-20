@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Table template</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <h1>Table template</h1>
+    <table>
+      <caption>
+        Data about the planets of our solar system (Planetary facts taken from <a href="http://nssdc.gsfc.nasa.gov/planetary/factsheet/">Nasa's Planetary Fact Sheet - Metric</a>).
+      </caption>
+      <thead>
+        <th colspan="2"></th>
+        <th id="name">Name</th>
+        <th id="mass">Mass (10<sup>24</sup>kg)</th>
+        <th id="diameter">Diameter (km)</th>
+        <th id="density">Density (kg/m<sup>3</sup>)</th>
+        <th id="gravity">Gravity (m/s<sup>2</sup>)</th>
+        <th id="daylength">Length of day (hours)</th>
+        <th id="distancefromsun">Distance from Sun (10<sup>6</sup>km)</th>
+        <th id="meantemperature">Mean temperature (°C)</th>
+        <th id="numberofmoons">Number of moons</th>
+        <th id="notes">Notes</th>
+      </thead>
+      <tbody>
+        <tr>
+          <th rowspan="4" colspan="2" id="terrestrial">Terrestrial planets</th>
+          <th id="mercury" header="name terrestrial">Mercury</th>
+          <td headers="mass mercury terrestrial">0.330</td>
+          <td headers="diameter mercury terrestrial">4,879</td>
+          <td headers="density mercury terrestrial">5427</td>
+          <td headers="gravity mercury terrestrial">3.7</td>
+          <td headers="daylength mercury terrestrial">4222.6</td>
+          <td headers="distancefromsun  terrestrial">57.9</td>
+          <td headers="meantemperature  terrestrial">167</td>
+          <td headers="numberofmoons  terrestrial">0</td>
+          <td headers="notes mercury terrestrial">Closest to the Sun</td>
+        </tr>
+        <tr>
+          <th id="venus" headers="name terrestrial">Venus</th>
+          <td headers="mass venus terrestrial">4.87</td>
+          <td headers="diameter venus terrestrial">12,104</td>
+          <td headers="density venus terrestrial">5243</td>
+          <td headers="gravity venus terrestrial">8.9</td>
+          <td headers="daylength venus terrestrial">2802.0</td>
+          <td headers="distancefromsunv enus terrestrial">108.2</td>
+          <td headers="meantemperature venus terrestrial">464</td>
+          <td headers="numberofmoons venus terrestrial">0</td>
+        </tr>
+        <tr>
+          <th id="earth" headers="name terrestrial">Earth </th>
+          <td headers="mass earth terrestrial">5.97</td>
+          <td headers="diameter earth terrestrial">12,756</td>
+          <td headers="density earth terrestrial">5514</td>
+          <td headers="gravity earth terrestrial">9.8</td>
+          <td headers="daylength earth terrestrial">24.0</td>
+          <td headers="distancefromsune arth terrestrial">149.6</td>
+          <td headers="meantemperature earth terrestrial">15</td>
+          <td headers="numberofmoons earth terrestrial">1</td>
+          <td headers="notes earth terrestrial">Our world</td>
+        </tr>
+        <tr>
+          <th id="mars" headers="name terrestrial">Mars</th> 
+          <td headers="mass mars terrestrial">0.642</td>
+          <td headers="diameter mars terrestrial">6,792</td>
+          <td headers="density mars terrestrial">3933</td>
+          <td headers="gravity mars terrestrial">3.7</td>
+          <td headers="daylength mars terrestrial">24.7</td>
+          <td headers="distancefromsunm ars terrestrial">227.9</td>
+          <td headers="meantemperature mars terrestrial">-65</td>
+          <td headers="numberofmoons mars terrestrial">2</td>
+          <td headers="notes mars terrestrial">The red planet</td>
+        </tr>
+        <tr>
+          <th rowspan="4" id="jovian">Jovian planets</th>
+          <th rowspan="2" id="gas" headers="jovian">Gas giants</th>
+          <th id="jupiter" headers="gas jovian">Jupiter</th>
+          <td headers="mass jupiter gas jovian">1898</td>
+          <td headers="diameter jupiter gas jovian">142,984</td>
+          <td headers="density jupiter gas jovian">1326</td>
+          <td headers="gravity jupiter gas jovian">23.1</td>
+          <td headers="daylength jupiter gas jovian">9.9</td>
+          <td headers="distancefromsun jupiter gas jovian">778.6</td>
+          <td headers="meantemperature jupiter gas jovian">-110</td>
+          <td headers="numberofmoons jupiter gas jovian">67</td>
+          <td headers="notes jupiter gas jovian">The largest planet</td>
+        </tr>
+        <tr>
+          <th id="saturn" headers="gas jovian">Saturn</th>
+          <td headers="mass saturn gas jovian">568</td>
+          <td headers="diameter saturn gas jovian">120,536</td>
+          <td headers="density saturn gas jovian">687</td>
+          <td headers="gravity saturn gas jovian">9.0</td>
+          <td headers="daylength saturn gas jovian">10.7</td>
+          <td headers="distancefromsun saturn gas jovian">1433.5</td>
+          <td headers="meantemperature saturn gas jovian">-140</td>
+          <td headers="numberofmoons saturn gas jovian">62</td>
+        </tr>
+        <tr>
+          <th rowspan="2" id="ice">Ice giants</th>
+          <th id="uranus" headers="ice jovian">Uranus</th>
+          <td headers="mass uranus ice jovian">86.8 </td>
+          <td headers="diameter uranus ice jovian">51,118 </td>
+          <td headers="density uranus ice jovian">1271 </td>
+          <td headers="gravity uranus ice jovian">8.7 </td>
+          <td headers="daylength uranus ice jovian">17.2 </td>
+          <td headers="distancefromsun uranus ice jovian">2872.5 </td>
+          <td headers="meantemperature uranus ice jovian">-195 </td>
+          <td headers="numberofmoons uranus ice jovian">27</td>
+        </tr>
+        <tr>
+          <th id="neptune" headers="ice jovian">Neptune</th>
+          <td headers="mass neptune ice jovian">102</td>
+          <td headers="diameter neptune ice jovian">49,528</td>
+          <td headers="density neptune ice jovian">1638</td>
+          <td headers="gravity neptune ice jovian">11.0</td>
+          <td headers="daylength neptune ice jovian">16.1</td>
+          <td headers="distancefromsun neptune ice jovian">4495.1</td>
+          <td headers="meantemperature neptune ice jovian">-200</td>
+          <td headers="numberofmoons neptune ice jovian">14</td>
+        </tr>
+        <tr>
+          <th colspan="2" id="dwarf">Dwarf planets</th>
+          <th id="pluto" headers="dwarf">Pluto</th>
+          <td headers="mass pluto dwarf">0.0146</td>
+          <td headers="diameter pluto dwarf">2,370</td>
+          <td headers="density pluto dwarf">2095</td>
+          <td headers="gravity pluto dwarf">0.7</td>
+          <td headers="daylength pluto dwarf">153.3</td>
+          <td headers="distancefromsun pluto dwarf">5906.4</td>
+          <td headers="meantemperature pluto dwarf">-225</td>
+          <td headers="numberofmoons pluto dwarf">5</td>
+          <td headers="notes pluto dwarf">Declassified as a planet in 2006, but this <a href="http://www.usatoday.com/story/tech/2014/10/02/pluto-planet-solar-system/16578959/">remains controversial</a>.</td>
+        </tr>
+      </tbody>
+    </table>
+
+
+  </body>
+</html>
