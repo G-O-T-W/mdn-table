@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="base.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Positions</title>
+  </head>
+  <body>
+    <div class="mover"></div>
+
+    <script>
+      const root = document.documentElement;
+      root.addEventListener("mousemove", (e)=> {
+        root.style.setProperty('--mouse-x', e.clientX + 'px');
+        root.style.setProperty('--mouse-y', e.clientY + 'px');
+      })
+    </script>
+  </body>
+</html>

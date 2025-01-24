@@ -1,0 +1,13 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.mover {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  background-color: red;
+  left: var(--mouse-x);
+  top: var(--mouse-y);
+}
